@@ -1,0 +1,70 @@
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+    background: blue;
+    color: hotpink;
+    font-family: "Roboto", sans-serif;
+    margin: 50px;
+}
+
+h1 {
+    font-style: italic;
+    font-size: x-large;
+    font-weight: bold;
+    color: pink;
+
+}
+
+#About {
+    align-content: center;
+    width:200px;
+    border: turquoise 3px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+#Experience {
+    align-content: center;
+    width: 200px;
+    border: turquoise 3px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+#Connect {
+    align-content: center;
+    width: 200px;
+    border: turquoise 3px solid;
+    margin: 10px;
+    padding: 10px;
+}
+a {
+    font-style: normal;
+}
+
+a:link {
+    color: red;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: yellow;
+}
+
+a:visited {
+    color: orange;
+}
+
+ul {
+    list-style-type: square;
+}
