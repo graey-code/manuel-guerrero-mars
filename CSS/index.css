@@ -4,14 +4,53 @@
   font-weight: 200;
   font-style: normal;
   font-variation-settings:
-    "wdth" 100;
+    "width" 100;
 }
 
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    text-align: center;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.container1 > li {
+    background: lightblue;
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 20px;  
+}
+
+.container2 > li {
+    border: lightblue dotted 5px;
+    display: inline-block;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
 body {
-    background: blue;
+    background: black;
     color: hotpink;
     font-family: "Roboto", sans-serif;
-    margin: 50px;
 }
 
 h1 {
@@ -19,6 +58,9 @@ h1 {
     font-size: x-large;
     font-weight: bold;
     color: pink;
+    width: 200px;
+    margin: 0 auto;
+    align-content: center;
 
 }
 
@@ -26,23 +68,21 @@ h1 {
     align-content: center;
     width:200px;
     border: turquoise 3px solid;
-    margin: 10px;
+    margin: 0 auto;
     padding: 10px;
 }
 
 #Experience {
     align-content: center;
-    width: 200px;
-    border: turquoise 3px solid;
-    margin: 10px;
-    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 #Connect {
     align-content: center;
     width: 200px;
     border: turquoise 3px solid;
-    margin: 10px;
+    margin: 0 auto;
     padding: 10px;
 }
 a {
@@ -66,5 +106,15 @@ a:visited {
 }
 
 ul {
-    list-style-type: square;
+    list-style-type: none;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+li {
+    
+    margin: 0 auto;
+
 }
