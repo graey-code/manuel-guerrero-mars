@@ -12,37 +12,37 @@
     top: 0;
     z-index: 1000;
     width: 100%;
-    text-align: center;
 }
 
 .container1 {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    
 }
 
 .container1 > li {
     background: lightblue;
     list-style-type: none;
     display: inline-block;
-    padding: 10px;
+    padding: 10px; 
+    text-align: center;
     
 }
 
 .container2 {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    row-gap: 2rem;
     text-align: center;
-    padding: 20px;  
+    font-size: x-large;
+    background-color: none;
+    padding: 1rem;    
 }
 
-.container2 > li {
-    border: lightblue dotted 5px;
-    display: inline-block;
-}
 
 .container3 {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
 }
 
@@ -54,19 +54,20 @@ body {
 }
 
 h1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     font-style: italic;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bold;
     color: pink;
-    width: 200px;
-    margin: 0 auto;
-    align-content: center;
+    /*align-content: center;*/
 
 }
 
 #About {
     align-content: center;
-    width:200px;
+    width: max-width;
     border: turquoise 3px solid;
     margin: 0 auto;
     padding: 10px;
@@ -74,13 +75,13 @@ h1 {
 
 #Experience {
     align-content: center;
-    width: 100%;
+    width: max-width;
     margin: 0 auto;
 }
 
 #Connect {
     align-content: center;
-    width: 200px;
+    width: max-width;
     border: turquoise 3px solid;
     margin: 0 auto;
     padding: 10px;
@@ -116,5 +117,41 @@ ul a {
 li {
     
     margin: 0 auto;
+
+}
+
+@media (max-width: 1000px) {
+
+    .container2 {
+        font-size: larger;
+        background-color: rgb(211, 29, 29);
+    }
+
+    h1 {
+        font-size: x-large;
+        color: rgb(105, 250, 255);
+
+    }
+
+    body {
+        background: rgb(3, 109, 3);
+        color: pink;
+    }
+}
+
+@media (max-width: 500px) {
+    .container2 {
+        font-size: medium;
+        background-color: rgb(27, 27, 205);
+    }
+
+    h1 {
+        font-size: larger;
+        color: hotpink;
+    }
+    body {
+        background: rgb(183, 110, 8);
+        color: rgb(105,250,255);
+    }
 
 }
