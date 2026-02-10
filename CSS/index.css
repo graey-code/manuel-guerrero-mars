@@ -46,6 +46,17 @@
 
 }
 
+#Skills ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    text-align: center;
+    font-size: x-large;
+    background-color: none;
+    padding: 1rem;    
+
+}
+
 
 body {
     background: black;
@@ -127,6 +138,11 @@ li {
         background-color: rgb(211, 29, 29);
     }
 
+    #Skills li {
+        border-bottom: 5px solid rgb(211, 29, 29);
+        padding: 1rem;
+    }
+
     h1 {
         font-size: x-large;
         color: rgb(105, 250, 255);
@@ -143,6 +159,11 @@ li {
     .container2 {
         font-size: medium;
         background-color: rgb(27, 27, 205);
+    }
+
+    #Skills li {
+        border-bottom: 5px solid rgb(27, 27, 205);
+        padding: .5rem;
     }
 
     h1 {
