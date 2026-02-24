@@ -57,6 +57,17 @@
 
 }
 
+#Messages ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1rem;
+    text-align: center;
+    font-size: large;
+    background-color: none;
+    padding: 2rem;    
+
+}
+
 
 body {
     background: black;
