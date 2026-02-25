@@ -64,3 +64,45 @@ messageForm.addEventListener ("submit", function (event) {
 
     messageForm.reset ();
 });
+
+// -- lesson 13 code --
+
+
+fetch ("https://api.github.com/users/graey-code/repos")
+    // .then((response) => {
+    //     if (!response.ok) {
+    //         throw new Error ("Failed to fetch data. Sorry for the inconvenience. :(");
+    //     }
+    //     return response.json;
+    // })
+    .then (function (response) {
+        return response.json();
+    }) 
+    .then ((repositories) => {
+        console.log ("Repositories: ", repositories);
+
+        const projectSection = document.getElementById ("Projects");
+        const projectList = projectSection.querySelector ("ul");
+
+        for (i = 0; i < repositories.length; i++) {
+            const project = document.createElement ("li");
+            project.innerText = repositories[i].name;
+            projectList.appendChild (project);
+        }
+    })
+    .catch ((error) => {
+        console.error ("Error with fetching repositories", error);
+    });
+
+
+    // try {
+    //     const response = await fetch(gitUrl);
+    //     if (!response.ok) {
+    //         throw new Error (`Response Status: ${response.status}`);
+    //     }
+
+    //     const result = await response.json ();
+    //     console.log (result);
+    // } catch (error) {
+    //     console.log (error.message);
+    // }
