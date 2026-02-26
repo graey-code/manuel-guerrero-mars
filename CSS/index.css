@@ -1,3 +1,5 @@
+/* --- PC Sized and styled Initially --- */
+
 .roboto {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -16,16 +18,17 @@
 
 .container1 {
     display: flex;
-    justify-content: center;
+    
     
 }
 
 .container1 > li {
-    background: lightblue;
+    background: rgb(10, 93, 121);
     list-style-type: none;
     display: inline-block;
     padding: 10px; 
     text-align: center;
+    border-radius: 10px;
     
 }
 
@@ -68,6 +71,17 @@
 
 }
 
+#Projects ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1rem;
+    text-align: center;
+    font-size: large;
+    background-color: none;
+    padding: 2rem;
+
+}
+
 
 body {
     background: black;
@@ -83,7 +97,6 @@ h1 {
     font-size: xx-large;
     font-weight: bold;
     color: pink;
-    /*align-content: center;*/
 
 }
 
@@ -113,7 +126,7 @@ a {
 }
 
 a:link {
-    color: red;
+    color: rgb(255, 0, 0);
 }
 
 a:hover {
@@ -126,6 +139,14 @@ a:active {
 
 a:visited {
     color: orange;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
 }
 
 ul {
@@ -142,6 +163,7 @@ li {
 
 }
 
+/* --- Tablet Sizing --- */
 @media (max-width: 1000px) {
 
     .container2 {
@@ -152,6 +174,7 @@ li {
     #Skills li {
         border-bottom: 5px solid rgb(211, 29, 29);
         padding: 1rem;
+        border-radius: 20px;
     }
 
     h1 {
@@ -166,7 +189,12 @@ li {
     }
 }
 
+/* --- Phone Sizing --- */
 @media (max-width: 500px) {
+
+    .container1 > li {
+        padding: 3px;
+    }
     .container2 {
         font-size: medium;
         background-color: rgb(27, 27, 205);
