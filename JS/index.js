@@ -94,15 +94,3 @@ fetch ("https://api.github.com/users/graey-code/repos")
         console.error ("Error with fetching repositories", error);
     });
 
-
-    // try {
-    //     const response = await fetch(gitUrl);
-    //     if (!response.ok) {
-    //         throw new Error (`Response Status: ${response.status}`);
-    //     }
-
-    //     const result = await response.json ();
-    //     console.log (result);
-    // } catch (error) {
-    //     console.log (error.message);
-    // }
